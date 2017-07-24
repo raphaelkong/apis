@@ -1,11 +1,10 @@
-//API ROUTES
-//
+// API register test module
 var express = require ("express");
 var bodyParser = require("body-parser");
 var api = express.Router();
 var app;
 
-api.get('/random/:min/:max',function(req,res){
+api.get('/register/guid/:max',function(req,res){
 
     var min = parseInt(req.params.min);
     var max = parseInt(req.params.max);

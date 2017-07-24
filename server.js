@@ -5,6 +5,8 @@ var logger = require("morgan");
 var httpserver, app, io;
 // Define routers
 var apiV1 = require('./api1.js');
+// require custom module
+var register = require('./register.js');
 var port;
 var io;
 var apptitle = 'express';
